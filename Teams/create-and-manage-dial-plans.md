@@ -55,11 +55,10 @@ After you plan the dial plans for your organization and figured out all the norm
 
 ### Add users to a dial plan
 
-1. In the left navigation of the Microsoft Teams admin center, go to **Voice** > **Dial plan**.
-2. Select the dial plan by clicking to the left of the dial plan name.
-3. Select **Manage users**.
-4. In the **Manage users** pane, search for the user by display name or by user name, select the name, and then select **Add**. Repeat this step for each user that you want to add.
-5. When you're finished adding users, select **Apply**.
+1. In the left navigation of the Microsoft Teams admin center, go to Users, and then click the user.
+2. Click Policies, and then next to Assigned policies, click Edit..
+3. Under Dial plan, select the dial plan you want to assign.
+4. When you're finished adding users, select **Apply**.
 
 ## Using PowerShell
   
