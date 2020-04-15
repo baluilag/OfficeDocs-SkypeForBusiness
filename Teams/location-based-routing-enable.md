@@ -68,7 +68,9 @@ This article describes how to enable Location-Based Routing for Direct Routing. 
 
 3. Use the [Grant-CsOnlineVoiceRoutingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csonlinevoiceroutingpolicy?view=skype-ps) cmdlet to associate online voice routing policies to users who require routing restrictions to be     enforced.
     ```PowerShell
-    Grant-CsOnlineVoiceRoutingPolicy -Identity <User> -Tenant <TenantId>
+    Grant-CsOnlineVoiceRoutingPolicy -Identity <User> -PolicyName <OnlineVoiceRoutingpolicy>
+    The following table shows the grant voice routing policies to user in this example. 
+    Grant-CsOnlineVoiceRoutingPolicy -Identity abc@contoso.com -PolicyName DelhiVoiceRoutingPolicy
     ```
 ## Enable Location-Based Routing for network sites
 1.  Use the [Set-CsTenantNetworkSite](https://docs.microsoft.com/powershell/module/skype/set-cstenantnetworksite?view=skype-ps) cmdlet to enable Location-Based Routing and associate voice routing policies to your network sites that need to enforce routing restrictions.
